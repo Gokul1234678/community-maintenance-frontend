@@ -1,0 +1,131 @@
+/* Page wrapper */
+.user-page {
+  min-height: 100vh;
+  background-color: #f9fafb;
+  padding: 20px;
+  color: #111827;
+}
+
+/* Header */
+.user-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.user-header h2 {
+  color: #6d28d9;
+  font-size: 24px;
+}
+
+/* Header buttons */
+.user-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.user-actions button {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.logout-btn {
+  background-color: #111827;
+  color: white;
+}
+
+.report-btn {
+  background-color: #6d28d9;
+  color: white;
+}
+
+.logout-btn:hover,
+.report-btn:hover {
+  opacity: 0.9;
+}
+
+/* Section title */
+.section-title {
+  margin: 25px 0 15px;
+  font-size: 18px;
+  color: #111827;
+}
+
+/* Issues grid */
+.issue-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+/* Issue card */
+.issue-card {
+  background-color: #ffffff;
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.issue-card h4 {
+  margin-bottom: 8px;
+  color: #6d28d9;
+}
+
+.issue-card p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #374151;
+}
+
+/* Status badge */
+.status {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 500;
+}
+.status.Pending {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.status.In-Progress {
+  background-color: #e0e7ff;
+  color: #3730a3;
+}
+
+.status.Resolved {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+/* Empty text */
+.empty-text {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .user-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .user-actions {
+    width: 100%;
+  }
+
+  .user-actions button {
+    flex: 1;
+  }
+}

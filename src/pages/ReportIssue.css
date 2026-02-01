@@ -1,0 +1,98 @@
+/* Page wrapper */
+.report-page {
+  min-height: 100vh;
+  background-color: #f9fafb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Card */
+.report-card {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 500px;
+  padding: 30px 25px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Title */
+.report-card h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #6d28d9;
+}
+
+/* Form */
+.report-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Inputs & textarea */
+.report-form input,
+.report-form textarea,
+.report-form select {
+  padding: 12px 14px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  outline: none;
+  resize: none;
+  transition: border-color 0.2s ease;
+}
+
+.report-form textarea {
+  min-height: 100px;
+}
+
+.report-form input:focus,
+.report-form textarea:focus,
+.report-form select:focus {
+  border-color: #6d28d9;
+}
+
+/* Submit button */
+.submit-btn {
+  margin-top: 10px;
+  padding: 12px;
+  background-color: #6d28d9;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  opacity: 0.9;
+}
+
+/* Back button */
+.back-btn {
+  margin-top: 12px;
+  width: 100%;
+  padding: 10px;
+  background-color: transparent;
+  color: #111827;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.back-btn:hover {
+  background-color: #f3f4f6;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .report-card {
+    padding: 25px 20px;
+  }
+}
