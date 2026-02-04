@@ -1,16 +1,110 @@
-# React + Vite
+# 🏘️ Community Maintenance Solution
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack **MERN** application that enables community members to report maintenance issues and allows administrators to track, manage, and resolve them efficiently.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
 
-## React Compiler
+🔗 Live Application  
+https://community-maintenance-frontend.netlify.app/
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🔗 Backend API  
+https://community-maintenance-backend.onrender.com
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📂 GitHub Repositories
+
+- Frontend: https://github.com/Gokul1234678/community-maintenance-frontend  
+- Backend: https://github.com/Gokul1234678/community-maintenance-backend  
+
+---
+
+## 🧩 Problem Statement
+
+Communities often face maintenance issues such as road damage, waste management problems, water leakage, and electrical failures.  
+This platform empowers community members to report issues and enables administrators to track and resolve them transparently and efficiently.
+
+---
+
+## ✨ Features
+
+### 👤 User Features
+- Secure user registration and login
+- Report community maintenance issues
+- View all issues reported by the user
+- Track issue status (Pending / In Progress / Resolved)
+- Responsive and user-friendly interface
+
+### 🛠️ Admin Features
+- Secure admin login
+- View all reported issues
+- Access reporter details
+- Update issue status (In Progress / Resolved)
+
+---
+
+## 🔐 Authentication & Authorization
+- JWT-based authentication
+- Role-based access control (User / Admin)
+- Protected routes for dashboards
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- React (Vite)
+- Axios
+- React Router DOM
+- CSS (Responsive white, black, and violet theme)
+
+### Backend
+- Node.js
+- Express.js
+- MongoDB Atlas
+- JWT Authentication
+
+### Deployment
+- Frontend: Netlify  
+- Backend: Render  
+- Database: MongoDB Atlas  
+
+---
+
+## 📸 Application Flow
+
+1. User or Admin logs in
+2. User reports a community issue
+3. Admin views all reported issues
+4. Admin updates issue status
+5. User tracks issue resolution
+
+---
+
+
+
+---
+
+
+## 🧪 How to Run Locally
+Backend
+cd backend
+npm install
+npm start
+
+Frontend
+cd frontend
+npm install
+npm run dev
+
+
+📌 Environment Variables (Backend)
+
+Create a .env file in the backend folder:
+
+MONGO_URI=your_mongodb_atlas_uri
+JWT_SECRET=your_secret_key
+PORT=5000
+### Backend
