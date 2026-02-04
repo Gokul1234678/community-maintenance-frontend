@@ -108,3 +108,19 @@ MONGO_URI=your_mongodb_atlas_uri
 JWT_SECRET=your_secret_key
 PORT=5000
 ### Backend
+
+---
+
+## 🏁 Conclusion
+
+This project demonstrates a real-world community problem solution using a modern full-stack MERN approach.  
+It emphasizes usability, security, and scalability, making it suitable for real deployment and further enhancements.
+
+---
+
+## 👨‍💻 Author
+
+**Gokul Selvan**  
+B.Sc. Computer Science 
+https://gokul-selvan-dev.netlify.app/ 
+
